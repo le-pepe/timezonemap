@@ -1,4 +1,5 @@
-import { createContext, useContext, useEffect, useState } from "react"
+import {createContext, useContext, useEffect, useState} from "react"
+import {InteractiveGridPattern} from "@components/ui/interactive-grid-pattern.tsx";
 
 type Theme = "dark" | "light" | "system"
 
@@ -58,6 +59,7 @@ export function ThemeProvider({
 
     return (
         <ThemeProviderContext.Provider {...props} value={value}>
+            <InteractiveGridPattern className="opacity-10" squares={[80, 80]} width={20} height={20} />
             {children}
         </ThemeProviderContext.Provider>
     )

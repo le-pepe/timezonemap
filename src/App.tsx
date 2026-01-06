@@ -104,9 +104,10 @@ export default function App() {
 
     return (
         <ThemeProvider defaultTheme="dark" storageKey="timezonemap-theme">
+
             <div className="flex flex-col min-h-screen">
                 {/* Navbar */}
-                <nav className="flex justify-between items-center p-4 border-b sticky top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
+                <nav className="flex justify-between items-center p-4 border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 z-50">
                     <div>
                         <h1 className="text-xl sm:text-2xl font-semibold">
                             {t.nav.title}
@@ -123,7 +124,7 @@ export default function App() {
                     <div className="container mx-auto p-4">
                         <div className="flex flex-col lg:flex-row gap-6 items-start">
                             {/* Columna izquierda - Mapa */}
-                            <div className="w-full lg:flex-1 border-2 rounded-lg p-4 bg-card">
+                            <div className="w-full lg:flex-1 border-2 rounded-lg p-4 bg-card z-10">
                                 <Map
                                     selectedTimezone={selectedTimezone}
                                     setSelectedTimezone={setSelectedTimezone}
@@ -131,7 +132,7 @@ export default function App() {
                             </div>
 
                             {/* Columna derecha - Cards de información */}
-                            <div className="w-full lg:w-80 space-y-6">
+                            <div className="w-full lg:w-80 space-y-6 z-10">
                                 {/* Card 1: Información de tiempo actual */}
                                 <div className="border-2 rounded-lg p-6 bg-card">
                                     <div className="space-y-4">
@@ -271,7 +272,7 @@ export default function App() {
                 </main>
 
                 {/* Footer */}
-                <footer className="border-t mt-auto">
+                <footer className="border-t mt-auto bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
                     <div className="container mx-auto px-4 py-6">
                         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                             <p className="text-sm text-muted-foreground text-center sm:text-left">
