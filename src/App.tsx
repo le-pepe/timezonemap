@@ -1,28 +1,16 @@
-
 import Map from "@components/TimeZoneMap.tsx";
-import {useEffect, useState, useMemo} from "react";
+import {useEffect, useMemo, useState} from "react";
 import {DateTime} from "luxon";
 import {ThemeProvider} from "@components/theme-provider.tsx";
 import {ModeToggle} from "@components/mode-toggle.tsx";
 import {LanguageToggle} from "@components/language-toggle.tsx";
-import {type Language, translations, getInitialLanguage} from "@/lib/i18n";
+import {getInitialLanguage, type Language, translations} from "@/lib/i18n";
 import citiesToTimeZoneMap from "@components/citiesToTimeZoneMap";
-import { Button } from "@/components/ui/button";
-import {
-    Command,
-    CommandEmpty,
-    CommandGroup,
-    CommandInput,
-    CommandItem,
-    CommandList,
-} from "@/components/ui/command";
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from "@/components/ui/popover";
-import { Check, ChevronsUpDown, Heart, Github } from "lucide-react";
-import { cn } from "@/lib/utils";
+import {Button} from "@/components/ui/button";
+import {Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList,} from "@/components/ui/command";
+import {Popover, PopoverContent, PopoverTrigger,} from "@/components/ui/popover";
+import {Check, ChevronsUpDown, Github, Heart} from "lucide-react";
+import {cn} from "@/lib/utils";
 
 export default function App() {
     const [language, setLanguage] = useState<Language>(getInitialLanguage);
@@ -209,10 +197,22 @@ export default function App() {
                                                                 {language === 'es' ? 'No se encontraron resultados.' : 'No results found.'}
                                                             </CommandEmpty>
                                                             <CommandGroup>
+                                                                <CommandItem className="font-semibold" key="UTC" value="UTC" onSelect={(current) => {
+                                                                    setSourceTimezone(current === sourceTimezone ? "" : current)
+                                                                    setOpen(false)
+                                                                }}>
+                                                                    <Check
+                                                                        className={cn(
+                                                                            "mr-2 h-4 w-4",
+                                                                            sourceTimezone === 'UTC' ? "opacity-100" : "opacity-0"
+                                                                        )}
+                                                                    />
+                                                                    UTC
+                                                                </CommandItem>
                                                                 {timezoneOptions.map((zone) => (
                                                                     <CommandItem
                                                                         key={zone}
-                                                                        value={zone}
+                                                                        value={zone.trim()}
                                                                         onSelect={(currentValue) => {
                                                                             setSourceTimezone(currentValue === sourceTimezone ? "" : currentValue)
                                                                             setOpen(false)
