@@ -3036,7 +3036,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "MultiPolygon",
@@ -4020,7 +4020,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "MultiPolygon",
@@ -6338,7 +6338,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "MultiPolygon",
@@ -9217,7 +9217,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "Polygon",
@@ -12945,7 +12945,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "Polygon",
@@ -13520,7 +13520,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "Polygon",
@@ -16771,7 +16771,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "MultiPolygon",
@@ -18625,7 +18625,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "Polygon",
@@ -19821,7 +19821,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "MultiPolygon",
@@ -20311,7 +20311,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "MultiPolygon",
@@ -22738,7 +22738,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "Polygon",
@@ -23717,7 +23717,7 @@
   },
   {
     "type": "Feature",
-    "id": "America/Argentina",
+    "id": "America/Argentina/Buenos_Aires",
     "properties": {},
     "geometry": {
       "type": "Polygon",
