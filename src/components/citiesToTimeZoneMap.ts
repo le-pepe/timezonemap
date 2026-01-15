@@ -113,7 +113,7 @@ const citiesToTimeZoneMap = {
     "Africa/Kampala": "(GMT+3:00) Nairobi",
     "America/Rio_Branco": "(GMT-5:00) Bogota, Lima, Quito",
     "Africa/Bamako": "(GMT+0:00) Casablanca, Monrovia",
-    "America/Argentina": "(GMT-3:00) Buenos Aires, Georgetown",
+    "America/Argentina/Buenos_Aires": "(GMT-3:00) Buenos Aires, Georgetown",
     "Asia/Yekaterinburg": "(GMT+5:00) Ekaterinburg",
     "America/Goose_Bay": "(GMT-3:00) Brasilia",
     "Africa/Conakry": "(GMT+0:00) Casablanca, Monrovia",
